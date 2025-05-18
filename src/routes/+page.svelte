@@ -8,7 +8,6 @@
 </script>
 
 <Component name="Hello from Svelte" />
-
 <button onclick={increase_counter}>
 	{#if count < 2}
 		<p>Clicked {count} time</p>
@@ -16,3 +15,20 @@
 		<p>Clicked {count} times</p>
 	{/if}
 </button>
+
+<style>
+	button {
+		background-color: #008cba;
+		color: white;
+		padding: 4px 8px;
+		border: none;
+		margin: 4px 2px;
+		cursor: pointer;
+		font-size: 12px;
+		border-radius: 4px;
+	}
+
+	button:hover {
+		background-color: #45a049;
+	}
+</style>
